@@ -9,7 +9,11 @@ const router = require('./routes/routes')
 
 
 
-const port = 4000;
+
+let port = process.env.PORT;
+if(port==null|| port==""){
+  port =4000;
+}
 const app = express();
 var htmlTemplate = "";
 
@@ -17,7 +21,9 @@ app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./views");
 app.use(express.static("public"));
+
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"

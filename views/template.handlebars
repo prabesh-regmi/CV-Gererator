@@ -103,8 +103,8 @@
     
                     <div class="yui-u">
                         <div class="contact-info">
-                            <h3>{{email}}</h3>
-                            <h3>{{phoneNumber}}</h3>
+                            <h3>Email: {{email}}</h3>
+                            <h3>Contact: {{phoneNumber}}</h3>
                         </div><!--// .contact-info -->
                     </div>
                 </div><!--// .yui-gc -->
@@ -130,13 +130,14 @@
                                 <h2>Skills</h2>
                             </div>
                             <div class="yui-u">
-    
+                                    {{#each skills}}
                                     <div class="talent">
-                                        <h2>{{skillsTitle}}</h2>
+                                        <h2>{{this.skillsTitle}}</h2>
                                         <p>
-                                        {{skillsdescription}}
+                                        {{this.skillsdescription}}
                                         </p>
                                     </div>
+                                    {{/each}}
     
                                     
                             </div>
@@ -147,9 +148,11 @@
                                 <h2>Technical</h2>
                             </div>
                             <div class="yui-u">
+                                {{#each technicalSkills}}
                                 <ul class="talent">
-                                    <li>{{technicalSkill}}</li>
+                                    <li>{{this.technicalSkill}}</li>
                                 </ul>
+                                {{/each}}
     
                                <!-- <ul class="talent">
                                     <li>Jquery</li>
@@ -173,13 +176,14 @@
                             </div><!--// .yui-u -->
     
                             <div class="yui-u">
-    
+                                {{#each experiences}}
                                 <div class="job">
-                                    <h2>{{company}}</h2>
-                                    <h3>{{positon}}</h3>
-                                    <h4>{{from}}-{{to}}</h4>
-                                    <p>{{jobDescription}} </p>
+                                    <h2>{{this.company}}</h2>
+                                    <h3>{{this.positon}}</h3>
+                                    <h4>{{this.from}}-{{to}}</h4>
+                                    <p>{{this.jobDescription}} </p>
                                 </div>
+                                {{/each}}
                                 <!--
                                 <div class="job">
                                     <h2>Apple Inc.</h2>
@@ -213,8 +217,15 @@
                                 <h2>Education</h2>
                             </div>
                             <div class="yui-u">
-                                <h2>{{university}} - {{address}}</h2>
-                                <h3><strong>{{gpa}} GPA</strong> </h3>
+                                {{#each universities}}
+                                
+                                
+                              
+
+                                <h2>{{this.university}} - {{this.address}}</h2>
+                                <h3><strong>{{this.gpa}} GPA</strong> </h3>
+                                <hr>
+                                {{/each}}
                             </div>
                         </div><!--// .yui-gf -->
     
