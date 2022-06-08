@@ -31,8 +31,9 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ``` 
-   
-   ### Running The code
+
+
+### Running The code
 
 
 1. Make sure your current directory is root directory of this Project
