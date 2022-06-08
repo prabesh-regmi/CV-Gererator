@@ -1,0 +1,37 @@
+ {
+     "cvInputFormat" :{
+    "name":"",
+     "jobPosition":"",
+     "email":"",
+     "phoneNumber":"5",
+     "profile":"P",
+     "skills":[
+     {
+         "skillsTitle":"",
+         "skillsdescription":""
+     }
+     ],
+     "technicalSkills":[
+         {
+             "technicalSkill":""
+         }
+     ],
+     "experiences":[
+         {
+             "company":"",
+             "from":"",
+             "to":"",
+             "positon":"",
+             "jobDescription":""
+     }
+     ],
+     "universities":[
+         {
+             "university":"",
+             "address":"",
+            "gpa":""
+         }
+     ]
+     
+  }
+}
