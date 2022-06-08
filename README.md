@@ -31,5 +31,15 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ``` 
+   
+   ### Running The code
+
+
+1. Make sure your current directory is root directory of this Project
+   
+2. Run the command
+   ```sh
+   npm run dev
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
