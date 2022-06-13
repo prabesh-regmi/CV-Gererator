@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const hbs = require("handlebars");
 const fs = require("fs");
 const router = require('./routes/routes')
-
+const cors = require('cors')
 
 
 
@@ -24,6 +24,7 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors())
 
 app.get("/", (req, res) => {
   //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"

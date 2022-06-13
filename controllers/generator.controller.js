@@ -45,7 +45,7 @@ generateCV = async (req, res) => {
       res.setHeader('Content-Disposition', `attachment; filename=${fileName}`);
       const response = await res.send(pdf);
       
-      // console.log(response);
+      console.log(pdf);
     } catch (e) {
       console.log("this is error:" + e);
     }
